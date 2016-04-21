@@ -5,17 +5,16 @@
 ## About Page: `hexo new page about`
 ## Tags Cloud Page: `hexo new page tags`
 menu:
-  主页: /
-  所有文章: /archives/
-  #随笔: /tags/随笔
-  标签云: /tags/
-  关于我: /about/
+  我的主页: /
+  我的文章: /archives/
+  我的标签云: /tags/
+  LOOK AT ME: /about/
 
 # Link to your avatar | 填写头像地址
-avatar: /img/avatar.png
+avatar: /img/avatar3.png
 
 # Small icon of Your site | 站点小图标地址
-favicon: /favicon.png
+favicon: /img/Cygwin.png
 
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
@@ -35,11 +34,11 @@ root_url:
 ## https://github.com/hexojs/hexo-generator-feed
 
 subnav:
-  Email: "mailto:123@123.com"
+  #Email: "mailto:123@123.com"
   #新浪微博: "sina weibo"
-  GitHub: "#"
+  #GitHub: "#"
   #V2EX: "#"
-  RSS: "/atom.xml"
+  #RSS: "/atom.xml"
   #知乎: "zhihu"
   #豆瓣: "douban"
   #简书: "jianshu"
@@ -81,8 +80,8 @@ duoshuo:
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
 youyan:
-  #on: true
-  id: 
+  on: true
+  id: 2093306 
   # 是否开启友言评论，http://www.uyan.cc/index.php
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
   # 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
@@ -104,24 +103,24 @@ base_font_size: 16  #px, 16 - 24
 color_scheme: 
 
 highlight_style:
-  #on: true
-  inline_code: 1  # Value: 0 - 9 可选
-  code_block: 1  # Value: 0 - 4 
+  on: true
+  inline_code: 3  # Value: 0 - 9 可选
+  code_block: 2  # Value: 0 - 4 
   # Set inline_code to style highlight text
   # Chose a highlight theme for code block
   # 通过 inline_code 切换内置文本高亮样式
   # 通过 code_block 切换内置代码高亮配色主题
 
 blockquote_style:
-  #on: true
-  blockquote: 1  # Value: 0 - 7 可选
+  on: true
+  blockquote: 2  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
 
 # 左边栏宽度 px
-left_col_width: 300
+left_col_width: 350
 
 # Copyright info. of post | 文末版权信息
-copyright: true
+copyright: false
 
 # Table of contents | 文章目录
 toc: true
@@ -140,7 +139,7 @@ animate: true
 
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
-jquery_ui: false
+jquery_ui: true
 
 # >>> Small features | 小功能设置 <<<
 
@@ -152,16 +151,16 @@ tagcloud: true
 friends:
   Hexo: https://hexo.io
   GitHub: https://pages.github.com/
-  MOxFIVE: http://moxfive.xyz/
+  旧博客地址: http://chenshang.ueuo.com
 #friends: false
 
 #是否开启“关于我”。
-aboutme: 专注于前端
+aboutme: 擅长Ai、Fw、Br、Ae、Pr、Id、Ps等软件,的安装与卸载,精通CSS、JavaScript、PHP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript等单词的拼写，熟悉Windows、Linux、MacOS、IOS、Android等系统的开关机. 
 #aboutme: false
 
 # 是否在新窗口打开链接
 # Open ALL link in a new tab
-open_in_new: false
+open_in_new: true
 
 # Customize feed link 自定义订阅地址
 rss: /atom.xml
@@ -175,7 +174,7 @@ fancybox: true
 
 # Display Math(LaTeX, MathML...) | 数学公式支持
 ## https://www.mathjax.org/
-mathjax: false
+mathjax: true
 
 # Socail Share | 是否开启分享
 share: 
@@ -207,7 +206,7 @@ visit_counter:
 
 # GitHub Repo Widget
 # https://github.com/hustcc/GitHub-Repo-Widget.js
-github_widget: false
+github_widget: true
 
 # Progress Bar | 页面加载进度条
 # Demo: http://github.hubspot.com/pace/docs/welcome/
@@ -218,7 +217,7 @@ github_widget: false
 progressBar:
   on: true
   type: "minimal"  # Keep Quotes | 保留引号避免出错
-  color: blue
+  color: silver
 
 CDN:
   jquery: //cdn.bootcss.com/jquery/1.9.1/jquery.min.js
