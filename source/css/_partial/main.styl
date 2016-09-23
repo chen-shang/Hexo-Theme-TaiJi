@@ -195,7 +195,6 @@
     }
     .switch-part2{
         left: 100%;
-        top: 20px;
         overflow-y: auto;
         max-height: 260px;
         font-size (12/16)rem
@@ -231,24 +230,6 @@
 
 #disqus_thread {
     padding: 0 40px;
-}
-
-.search {
-    width: 68%;
-    height: 18px;
-    margin-top: 1px;
-    padding: 0;
-    font-family: inherit;
-    border: 2px solid transparent;
-    border-bottom: 2px solid lightgray;
-    border-radius: 2px;
-    opacity: .2;
-    background: none;
-    &:hover {
-        border: 2px solid lightgray;
-        opacity: 1;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    };
 }
 
 #scroll{
@@ -378,7 +359,7 @@ if hexo-config("progressBar.on") && hexo-config("progressBar.type") == "minimal"
                 background #77b6ff
                 box-shadow 0 0 10px rgba(@background, .7) 
 
-.social,
+.article-entry ul > li,
 .share,
 .article-category::before,
 .article-tag::before,
@@ -386,3 +367,9 @@ if hexo-config("progressBar.on") && hexo-config("progressBar.type") == "minimal"
     text-rendering auto
     -webkit-font-smoothing antialiased
     -moz-osx-font-smoothing grayscale
+
+.youyan
+    padding 20px 40px
+@media (max-width: 767px)
+    .youyan
+        padding 20px 10px

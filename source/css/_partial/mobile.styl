@@ -241,6 +241,10 @@
     line-height: 1.25em;
     .toc-title {
         display: none;
+        padding: .3em;
+        color: white;
+        background: lightgray;
+        border-radius 3px
     }
     .toc {
         padding: 0.5em;
@@ -249,7 +253,7 @@
         margin: 0;
         padding: 0.5em;
         border-radius: 5px;
-        background: rgba(255, 255, 255, .75);
+        background: rgba(255, 255, 255, .85);
         ol {
             padding: 0.1em 0;
             padding-left: 1.2em;
@@ -259,6 +263,10 @@
         color: #767676;
     }
 }
+
+if toc-nowrap
+    li.toc-item
+        line-height: 1.2
 
 .copyright {
     width: 90%;
@@ -308,3 +316,7 @@ if hexo-config("github_widget")
     font-size 16px
     .copy-path
         display none
+
+// Tags Cloud Page
+.tags a
+    line-height 45px

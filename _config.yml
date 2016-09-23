@@ -1,3 +1,5 @@
+# Theme Version | 当前版本
+TaiJi: "3.5"
 
 # >>> Basic Setup | 基础设置 <<<
 
@@ -27,6 +29,9 @@ favicon: http://7xsy6v.com2.z0.glb.clouddn.com/Cygwin.ico
 ## https://hexo.io/docs/configuration.html#URL
 root_url: 
 
+# Year of Site Creation | 网站成立年份
+since: 2016
+
 # Social info. Bar | 社交信息展示
 ## Keep "mailto:" in Email | 设置 Email 时保留 "mailto:"
 ## Encrypt email 加密邮件地址 http://ctrlq.org/encode/
@@ -34,29 +39,6 @@ root_url:
 ## https://github.com/hexojs/hexo-generator-feed
 
 subnav:
-  #Email: "mailto:123@123.com"
-  #新浪微博: "sina weibo"
-  #GitHub: "#"
-  #V2EX: "#"
-  #RSS: "/atom.xml"
-  #知乎: "zhihu"
-  #豆瓣: "douban"
-  #简书: "jianshu"
-  #SegmentFault: ""
-  #网易云音乐: "netease"
-  #虾米音乐: "xiami"
-  #Facebook: "#"
-  #Google: "#"
-  #Twitter: "#"
-  #LinkedIn: "#"
-  #QQ: "#"
-  #微信: "Wechat"
-  #PayPal: "#"
-  #StackOverflow: "#"
-  #Instagram: "#"
-  #Flickr: "#"
-  #reddit: ""
-  #Medium: ""
   #TiddlyWiki: ""
   #Tumblr: ""
   #_500px: ""
@@ -64,6 +46,14 @@ subnav:
 # >>> Conments 评论系统 <<<
 # Chose ONE as your comment system and keep others disable.
 # 选一个作为网站评论系统，其他保持禁用。
+
+preload_comment: true
+## false: 当点击评论条等区域时再加载评论模块
+## false: load comment's section until u click/hover on the bar/icon
+
+show_count: true
+## 是否在主页文章标题旁显示评论数（多说、Disqus）
+## Add comment count after article title
 
 disqus: 
   #on: true
@@ -113,8 +103,15 @@ highlight_style:
 
 blockquote_style:
   on: true
-  blockquote: 2  # Value: 0 - 7 可选
+  blockquote: 6  # Value: 0 - 7 可选
   # 自定义文章「引用部分」的样式
+
+# Headings Style | 标题风格
+## 0-Yelee, 1-Yilia, 2-GitHub
+heading_style: 2 # Value: 0 - 2
+
+## List style type (ul) | 无序列表项标记样式
+list_style: 0  # value: 0 - 12 可选
 
 # 左边栏宽度 px
 left_col_width: 350
@@ -123,15 +120,10 @@ left_col_width: 350
 copyright: false
 
 # Table of contents | 文章目录
-toc: true
-
-# 目录中标题不换行
-# Keep TOC title on the same line | 
-toc_nowrap: false
-
-# 是否显示边栏中的搜索框（仅样式，未添加搜索功能）
-# Search Box in left column
-search_box: false
+toc:
+  list_number: true # 目录序号
+  max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
+  nowrap: false # Keep title on same line | 目录标题不换行
 
 # 是否开启主页及加载头像时的动画效果
 # Animation in Homepage and Loading avatar
@@ -140,6 +132,11 @@ animate: true
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
 jquery_ui: true
+
+# Max width of right cloumn | 限制右侧内容的宽带
+limit_article_width:
+   on: false
+   max_width: 60 # em
 
 # >>> Small features | 小功能设置 <<<
 
@@ -162,13 +159,46 @@ aboutme: 擅长Ai、Fw、Br、Ae、Pr、Id、Ps等软件,的安装与卸载,精�
 
 # 是否在新窗口打开链接
 # Open ALL link in a new tab
-open_in_new: true
+open_in_new:
+  global: 0 # 0-2
+  title: false # article title in homepage 主页文章标题
+  post: false # link within post/page 正文中的链接
+  tags: false # 标签
+  categories: false # 分类
+  article_nav: false # 导航
+  archives: true # 归档
+  mini_archives: true # 迷你归档
+  menu: false # 边栏菜单
+  friends: true  # 友情链接
+  socail: true # 社交图标
 
 # Customize feed link 自定义订阅地址
 rss: /atom.xml
 
+#eminder for IE6/7/8
+# 针对 IE6/7/8 的升级浏览器提示
+ie_updater:
+   on: true
+   link: //outdatedbrowser.com/
+   ## http://browsehappy.com/
+   ## http://outdatedbrowser.com/
+
+# Tab Title Change | 标签页标题切换
+tab_title_change:
+  on: true
+  left_tab_title: '(つェ⊂) 我藏好了哦~ '
+  return_tab_title: '(*´∇｀*) 被你发现啦~ '
 
 # >>> Vendors | 第三方工具 & 服务 <<<
+
+# Local Site Search | 本地站内搜索
+## Insatall below plugin to take effect | 使用搜索需先安装对应插件
+## https://github.com/PaicHyperionDev/hexo-generator-search
+search:
+  #on: true
+  onload: true
+  ## true: get search.xml file when the page has loaded
+  ## false: get the file when search box gets focus
 
 # images viewer | 图片浏览器
 ## http://www.fancyapps.com/fancybox/
