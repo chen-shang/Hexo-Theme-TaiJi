@@ -16,10 +16,6 @@
         <i class="header-subtitle fa fa-leaf">	<%=theme.subtitle%></i>
 	<hr/>
         <%}%>
-        <% if (theme.search_box){ %>
-        <form><input type="text" class="search" placeholder=" Search..."></form>
-        <%}%>        
-
 	<% if (theme.search.on){ %>
             <form id="search-form">
             <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="<%= theme.search.onload %>" />

@@ -66,7 +66,7 @@ var searchFunc = function(path, search_id, content_id) {
                                 start = 0;
                             }
                             if(start == 0){
-                                end = 10;
+                                end = 100;
                             }
                             if(end > content.length){
                                 end = content.length;
