@@ -1,6 +1,6 @@
 <div class="overlay"></div>
 <div style='position:absolute'>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=340 height=86 src="http://music.163.com/outchain/player?type=2&id=<%= theme.musicId %>&auto=<%= theme.auto %>&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=346 height=85 src="http://music.163.com/outchain/player?type=2&id=<%= theme.musicId %>&auto=<%= theme.auto %>&height=66"></iframe>
 </div>
 <div class="intrude-less">
     <header id="header" class="inner">
@@ -14,15 +14,15 @@
         <% if (theme.subtitle){ %>
 	<hr>
         <i class="header-subtitle fa fa-leaf">	<%=theme.subtitle%></i>
-	<hr/>
-        <%}%>
 	<% if (theme.search.on){ %>
             <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="<%= theme.search.onload %>" />
+            <input type="text" id="local-search-input" name="q" placeholder="点我搜索呀 ..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="<%= theme.search.onload %>" />
             <i class="fa fa-times" onclick="resetSearch()"></i>
             </form>
             <div id="local-search-result"></div>
             <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
+        <%}%>
+	<hr/>
         <%}%>
 
         <%if(theme.tagcloud){%>
@@ -81,7 +81,7 @@
                         </ul>
                     </nav>
                 </section>
-                
+
                 <%if(theme.tagcloud){%>
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
@@ -89,7 +89,7 @@
                     </div>
                 </section>
                 <%}%>
-                
+
                 <%if(theme.friends && theme.friends.length != 0){%>
                 <section class="switch-part switch-part3">
                     <div id="js-friends">
@@ -133,5 +133,5 @@
 		    <hr/>
 		</div>
         </div>
-    </header>                
+    </header>
 </div>

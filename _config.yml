@@ -9,7 +9,8 @@ TaiJi: "3.5"
 menu:
   我的主页: /
   我的文章: /archives/
-  我的标签云: /tags/
+  我的标签: /tags/
+  我的相册: /photos/
   LOOK AT ME: /about/
 
 # Link to your avatar | 填写头像地址
@@ -114,7 +115,7 @@ heading_style: 2 # Value: 0 - 2
 list_style: 0  # value: 0 - 12 可选
 
 # 左边栏宽度 px
-left_col_width: 350
+left_col_width: 355
 
 # Copyright info. of post | 文末版权信息
 copyright: false
@@ -122,7 +123,7 @@ copyright: false
 # Table of contents | 文章目录
 toc:
   list_number: true # 目录序号
-  max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
+  max_depth: 6  # 1 - 6 (h1-h6) 目录最大级数
   nowrap: false # Keep title on same line | 目录标题不换行
 
 # 是否开启主页及加载头像时的动画效果
@@ -185,7 +186,7 @@ ie_updater:
 
 # Tab Title Change | 标签页标题切换
 tab_title_change:
-  on: true
+  on: false
   left_tab_title: '(つェ⊂) 我藏好了哦~ '
   return_tab_title: '(*´∇｀*) 被你发现啦~ '
 
@@ -196,7 +197,7 @@ tab_title_change:
 ## https://github.com/PaicHyperionDev/hexo-generator-search
 search:
   on: true
-  onload: true
+  onload: false
   ## true: get search.xml file when the page has loaded
   ## false: get the file when search box gets focus
 
@@ -206,7 +207,7 @@ fancybox: true
 
 # Display Math(LaTeX, MathML...) | 数学公式支持
 ## https://www.mathjax.org/
-mathjax: true
+mathjax: false
 
 # Socail Share | 是否开启分享
 share: 
@@ -247,7 +248,7 @@ github_widget: true
 #       loading-bar|mac-osx|minimal
 # color: black|blue|green|orange|pink|purple|red|silver|white|yellow|
 progressBar:
-  on: true
+  on: false
   type: "minimal"  # Keep Quotes | 保留引号避免出错
   color: silver
 
