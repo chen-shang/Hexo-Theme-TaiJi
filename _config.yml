@@ -52,7 +52,7 @@ preload_comment: true
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until u click/hover on the bar/icon
 
-show_count: true
+show_count: false
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
 
@@ -151,8 +151,6 @@ friends:
   GitHub: https://pages.github.com/
   旧博客地址: http://chenshang.ueuo.com
 #friends: false
-
-
 
 #是否开启“关于我”。
 aboutme: 擅长Ai、Fw、Br、Ae、Pr、Id、Ps等软件,的安装与卸载,精通CSS、JavaScript、PHP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript等单词的拼写，熟悉Windows、Linux、MacOS、IOS、Android等系统的开关机. 
