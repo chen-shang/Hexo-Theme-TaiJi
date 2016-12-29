@@ -122,6 +122,7 @@ copyright: false
 
 # Table of contents | 文章目录
 toc:
+  on: true
   list_number: true # 目录序号
   max_depth: 6  # 1 - 6 (h1-h6) 目录最大级数
   nowrap: false # Keep title on same line | 目录标题不换行
