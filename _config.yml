@@ -17,7 +17,7 @@ menu:
 avatar: /img/avatar3.png
 
 # Small icon of Your site | 站点小图标地址
-favicon: http://7xsy6v.com2.z0.glb.clouddn.com/Cygwin.ico
+favicon:
 
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
@@ -72,7 +72,7 @@ duoshuo:
 
 youyan:
   on: true
-  id: 2093306 
+  id: 
   # 是否开启友言评论，http://www.uyan.cc/index.php
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
   # 友言服务在 Web 环境下运行，普通本地环境无法查看，请部署后在线上测试。
