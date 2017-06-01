@@ -17,7 +17,7 @@ menu:
 avatar: /img/avatar3.png
 
 # Small icon of Your site | 站点小图标地址
-favicon:
+favicon: http://7xsy6v.com2.z0.glb.clouddn.com/Cygwin.ico
 
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
@@ -52,7 +52,7 @@ preload_comment: true
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until u click/hover on the bar/icon
 
-show_count: true
+show_count: false
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
 
@@ -71,7 +71,7 @@ duoshuo:
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
 youyan:
-  on: true
+  #on: true
   id: 
   # 是否开启友言评论，http://www.uyan.cc/index.php
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
@@ -109,10 +109,10 @@ blockquote_style:
 
 # Headings Style | 标题风格
 ## 0-Yelee, 1-Yilia, 2-GitHub
-heading_style: 0 # Value: 0 - 2
+heading_style: 1 # Value: 0 - 2
 
 ## List style type (ul) | 无序列表项标记样式
-list_style: 0  # value: 0 - 12 可选
+list_style: 0 # value: 0 - 12 可选
 
 # 左边栏宽度 px
 left_col_width: 355
@@ -123,9 +123,9 @@ copyright: false
 # Table of contents | 文章目录
 toc:
   on: true
-  list_number: true # 目录序号
-  max_depth: 6  # 1 - 6 (h1-h6) 目录最大级数
-  nowrap: false # Keep title on same line | 目录标题不换行
+  list_number: false # 目录序号
+  max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
+  nowrap: true # Keep title on same line | 目录标题不换行
 
 # 是否开启主页及加载头像时的动画效果
 # Animation in Homepage and Loading avatar
@@ -133,7 +133,7 @@ animate: true
 
 # Load jQuery UI to style tooltips
 # 工具提示框样式美化
-jquery_ui: false
+jquery_ui: true
 
 # Max width of right cloumn | 限制右侧内容的宽带
 limit_article_width:
@@ -206,7 +206,7 @@ fancybox: true
 
 # Display Math(LaTeX, MathML...) | 数学公式支持
 ## https://www.mathjax.org/
-mathjax: false
+mathjax: true
 
 # Socail Share | 是否开启分享
 share: 
