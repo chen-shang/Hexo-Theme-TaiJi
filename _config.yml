@@ -14,10 +14,10 @@ menu:
   LOOK AT ME: /about/
 
 # Link to your avatar | 填写头像地址
-avatar: /img/avatar3.png
+avatar: /img/favicon.jpeg
 
 # Small icon of Your site | 站点小图标地址
-favicon: http://7xsy6v.com2.z0.glb.clouddn.com/Cygwin.ico
+favicon: /img/avatar.png
 
 # Internationalization | 主题语言
 ## Change Language in SITE's _config.yml | 在站点配置中切换语言
@@ -154,7 +154,7 @@ friends:
 #friends: false
 
 #是否开启“关于我”。
-aboutme: 1. 擅长Ai、Fw、Br、Ae、Pr、Id、Ps等软件的安装与卸载。------------------ 2. 精通CSS、JavaScript、PHP、C、C++、C#、Java、Ruby、Perl、Lisp、Python、Objective-C、ActionScript等单词的拼写。------------------------ 3. 熟悉Windows、Linux、MacOS、IOS、Android等系统的开关机。
+aboutme: 一个在IT业界打杂的程序猿
 #aboutme: false
 
 # 是否在新窗口打开链接
