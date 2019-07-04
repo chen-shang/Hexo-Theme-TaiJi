@@ -52,13 +52,13 @@ preload_comment: true
 ## false: 当点击评论条等区域时再加载评论模块
 ## false: load comment's section until u click/hover on the bar/icon
 
-show_count: false
+show_count: true
 ## 是否在主页文章标题旁显示评论数（多说、Disqus）
 ## Add comment count after article title
 
 disqus: 
-  #on: true
-  shortname: 
+  on: true
+  shortname: chenshang
   # https://help.disqus.com/customer/en/portal/articles/466208-what-s-a-shortname-
   # It is unnecessary to enable disqus here if 
   # you have set "disqus_shortname" in your site's "_config.yml" 
@@ -71,7 +71,7 @@ duoshuo:
   # http://<要填的部分>.duoshuo.com (domain只填上<>里的内容，不要填整个网址)
 
 youyan:
-  on: true
+  #on: false
   id: 2093306
   # 是否开启友言评论，http://www.uyan.cc/index.php
   # id 中填写你的友言用户数字ID，注册后进入后台管理即可查看
@@ -123,8 +123,8 @@ copyright: false
 # Table of contents | 文章目录
 toc:
   on: true
-  list_number: false # 目录序号
-  max_depth: 3  # 1 - 6 (h1-h6) 目录最大级数
+  list_number: true # 目录序号
+  max_depth: 4  # 1 - 6 (h1-h6) 目录最大级数
   nowrap: true # Keep title on same line | 目录标题不换行
 
 # 是否开启主页及加载头像时的动画效果
