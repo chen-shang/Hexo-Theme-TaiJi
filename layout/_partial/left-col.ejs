@@ -11,17 +11,16 @@
           <h1 class="header-author"><a href="<%= config.root %>"><%=theme.author%></a></h1>
         </hgroup>
 
+	<form id="search-form"> <!-- 搜索框相关 -->
+    	<input type="text" id="local-search-input" name="q" results="0" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off"/>
+        <i style="color:red" class="fa fa-times" onclick="resetSearch()">🙈</i> <!-- 清空/重置搜索框 -->
+	</form>
+	<div id="local-search-result"></div> <!-- 搜索结果区 -->
+	<p class='no-result'>No results found </p> <!-- 无匹配时显示，注意请在 CSS 中设置默认隐藏 -->
+
         <% if (theme.subtitle){ %>
 	<hr>
         <i class="header-subtitle fa fa-leaf">	<%=theme.subtitle%></i>
-	<% if (theme.search.on){ %>
-            <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="点我搜索呀 ..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="<%= theme.search.onload %>" />
-<!--            <i class="fa fa-times" onclick="resetSearch()"></i>  -->
-            </form>
-            <div id="local-search-result"></div>
-            <p class='no-result'>No results found <i class='fa fa-spinner fa-pulse'></i></p>
-        <%}%>
 	<hr/>
         <%}%>
 
